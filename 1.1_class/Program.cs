@@ -1,0 +1,1 @@
+Product karinto = new Product(123, "かりんとう", 180);
