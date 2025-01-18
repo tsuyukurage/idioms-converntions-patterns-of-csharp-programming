@@ -19,13 +19,3 @@ PrintMeterToFeetList(int start, int stop) {
     Console.WriteLine($"{meter}m = {feet:N4}ft");
   }
 }
-
-// フィートからメートルを求める
-static double FeetToMeter(int feet) {
-  return feet * 0.3048;
-}
-
-// メートルからフィートを求める
-static double MeterToFeet(int meter) {
-  return meter / 0.3048;
-}
