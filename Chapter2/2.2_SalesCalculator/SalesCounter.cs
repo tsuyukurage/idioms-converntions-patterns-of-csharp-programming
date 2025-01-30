@@ -1,3 +1,4 @@
+namespace SalesCalculator;
 // 売り上げ集計クラス
 public class SalesCounter {
 
