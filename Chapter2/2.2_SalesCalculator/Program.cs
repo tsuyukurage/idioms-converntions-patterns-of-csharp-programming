@@ -14,3 +14,9 @@ static List<Sale> ReadSales(string filePath) {
   }
   return sales;
 }
+
+SalesCounter sales = new SalesCounter(ReadSales("sales.csv"));
+Dictionary<string, int> amountsPerStore = sales.GetPerStoreSales();
+foreach (KeyValuePair<string, int> obj in amountsPerStore) {
+  Console.WriteLine($"{obj.Key} {obj.Value}");
+}
